@@ -3,15 +3,17 @@ name: Code Linting
 on: 'push'
 jobs:
   code-quality:
-    name: Lint source code
+    name: Lint source code backend-notes
     runs-on: ubuntu-latest
     steps:
 
     - name: Install dependencies
+      working-directory: ./part3
       run: |
         npm install
 
     - name: Lint files
+      working-directory: ./part3
       run: |
         npm run lint:fix
         npm run lint
