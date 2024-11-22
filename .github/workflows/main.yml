@@ -1,0 +1,17 @@
+name: Code Linting
+
+on: 'push'
+jobs:
+  code-quality:
+    name: Lint source code
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Lint files
+      run: |
+        npm run lint:fix
+        npm run lint
