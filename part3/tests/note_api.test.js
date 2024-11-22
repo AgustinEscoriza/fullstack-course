@@ -12,7 +12,6 @@ const Note = require('../models/note')
 describe('when there is initially some notes saved', () => {
   beforeEach(async () => {
     await Note.deleteMany({})
-    
     await Note.insertMany(helper.initialNotes)
   })
 
