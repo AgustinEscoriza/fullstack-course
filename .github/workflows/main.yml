@@ -4,7 +4,6 @@ on: 'push'
 jobs:
   code-quality:
     name: Lint source code backend-notes
-    runs-on: ubuntu-latest
     steps:
 
     - name: Install dependencies
