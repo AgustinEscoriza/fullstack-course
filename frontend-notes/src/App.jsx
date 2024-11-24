@@ -10,12 +10,12 @@ import NoteForm from './components/NoteForm'
 
 const App = () => {
   const [notes, setNotes] = useState([])
-  const [newNote, setNewNote] = useState('')
+  const [, setNewNote] = useState('')
   const [showAll, setShowAll] = useState(true)
   const [errorMessage, setErrorMessage] = useState("")
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
-  const [user, setUser] = useState(null)
+  const [, setUser] = useState(null)
 
   useEffect(() => {
     noteService
